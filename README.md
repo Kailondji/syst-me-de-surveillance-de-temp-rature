@@ -8,7 +8,7 @@
 Lorsque la température dépasse un seuil critique (38 °C), le système déclenche automatiquement une alerte par LED rouge, buzzer, et activation d’un ventilateur pour refroidir l’environnement. En fonctionnement normal, une LED bleue est allumée. L’ensemble est intégré dans un boîtier imprimé en 3D, compact et pratique.
 
 ### Objectifs techniques :
-####Lire et afficher température et humidité ambiantes.
+#### Lire et afficher température et humidité ambiantes.
 Alerter l’utilisateur en cas de surchauffe.
 Activer un système de ventilation pour la sécurité thermique.
 Proposer une interface visuelle simple et accessible.
@@ -22,7 +22,7 @@ Ventilateur 5V
 Transistor de commande (MOSFET ou NPN)
 Boîtier imprimé en 3D
 
-###Innovation et valeur ajoutée :
+### Innovation et valeur ajoutée :
 Ce système intelligent est entièrement autonome et peut être adapté à différents contextes : surveillance thermique de matériel informatique, protection d’équipements sensibles, ou projets domotiques. Il constitue un bon exemple d’intégration entre capteurs, actionneurs, interface utilisateur et automatisation.
 
 
