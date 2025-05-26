@@ -1,5 +1,5 @@
 # système-de-surveillance-de-température
-###Contexte :
+### Contexte :
 #### Dans un environnement où la régulation thermique est essentielle (salles informatiques, boîtiers électroniques, serres, etc.), il est important de détecter rapidement les hausses de température pour réagir efficacement. Ce projet s’inscrit dans le cadre de l’UE Communication sans fils et spatial et vise à concevoir un système embarqué capable de surveiller la température ambiante et de déclencher une alarme en cas de dépassement de seuil.
 
 ### Description :
