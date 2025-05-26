@@ -13,14 +13,14 @@ Alerter l’utilisateur en cas de surchauffe.
 Activer un système de ventilation pour la sécurité thermique.
 Proposer une interface visuelle simple et accessible.
 ### Composants principaux :
-#### Arduino Uno
-Capteur DHT22
-Écran LCD I2C
-LEDs (rouge et bleue)
+#### Arduino Uno;
+Capteur DHT22;
+Écran LCD I2C;
+LEDs (rouge et bleue);
 Buzzer
-Ventilateur 5V
-Transistor de commande (MOSFET ou NPN)
-Boîtier imprimé en 3D
+Ventilateur 5V;
+Transistor de commande;
+Boîtier imprimé en 3D;
 
 ### Innovation et valeur ajoutée :
 Ce système intelligent est entièrement autonome et peut être adapté à différents contextes : surveillance thermique de matériel informatique, protection d’équipements sensibles, ou projets domotiques. Il constitue un bon exemple d’intégration entre capteurs, actionneurs, interface utilisateur et automatisation.
