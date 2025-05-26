@@ -1,1 +1,1 @@
-# syst-me-de-surveillance-de-temp-rature
+# système-de-surveillance-de-température
