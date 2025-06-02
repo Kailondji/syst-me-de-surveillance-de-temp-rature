@@ -23,20 +23,36 @@
 
 #### ⚠️ Seuil critique fixé à 38 °C : au-delà de cette température, le système réagit automatiquement en activant l’alerte.
 
-### Objectifs techniques :
-#### Lire et afficher température et humidité ambiantes.
-Alerter l’utilisateur en cas de surchauffe.
-Activer un système de ventilation pour la sécurité thermique.
-Proposer une interface visuelle simple et accessible.
-### Composants principaux :
-#### Arduino Uno;
-Capteur DHT22;
-Écran LCD I2C;
-LEDs (rouge et bleue);
-Buzzer
-Ventilateur 5V;
-Transistor de commande;
-Boîtier imprimé en 3D;
+###🎯 Objectifs techniques
+#### Le système a été conçu pour répondre à plusieurs objectifs fonctionnels :
+
+#### ✅ Lire et afficher en temps réel la température et l’humidité ambiantes.
+
+#### 🚨 Détecter automatiquement une situation de surchauffe (T > 38 °C).
+
+#### 🔔 Déclencher une alarme visuelle et sonore : LED rouge + buzzer.
+
+#### 🌀 Activer un ventilateur en cas de besoin pour baisser la température.
+
+#### 👁️ Offrir une interface simple et visuelle à l’utilisateur grâce à l’écran LCD.
+
+#### ⚙️ Fonctionner de manière autonome et continue, sans intervention manuelle.
+
+### 🔩 Composants utilisés
+#### Composant	Rôle dans le système
+### Arduino Uno:              	Unité de traitement centrale
+### DHT22:                     	Capteur de température et d’humidité
+### Écran LCD I2C (16x2) :    	Affichage en temps réel
+### LED rouge:                	Indication visuelle de température élevée
+### LED bleue:                	Indication de température normale
+### Buzzer actif 5V:           	Alerte sonore
+### Ventilateur 5V:           	Refroidissement automatique
+### Transistor NPN:            	Contrôle du ventilateur
+### Diode de roue libre:      	Protection contre retour de courant du moteur
+### Résistances diverses:      	Protection des LEDs et du capteur
+### Boîtier imprimé en 3D:    	Support physique du montage
+
+
 
 ### Innovation et valeur ajoutée :
 Ce système intelligent est entièrement autonome et peut être adapté à différents contextes : surveillance thermique de matériel informatique, protection d’équipements sensibles, ou projets domotiques. Il constitue un bon exemple d’intégration entre capteurs, actionneurs, interface utilisateur et automatisation.
