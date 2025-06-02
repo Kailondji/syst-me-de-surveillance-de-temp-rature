@@ -53,6 +53,43 @@
 ### Boîtier imprimé en 3D:    	Support physique du montage
 
 
+## 🔌 Schéma et description des branchements
+#### Voici la description détaillée des connexions entre les composants du système et la carte Arduino Uno :
+
+### 1. 🔶 Capteur DHT22 :
+#### - VCC (1ère broche) → 5V de l’Arduino
+#### - DATA (2e broche) → Broche D2 de l’Arduino
+#### - GND (4e broche) → GND de l’Arduino
+#### - Une résistance de 10 kΩ entre VCC et DATA (pull-up)
+
+### 2. 📺 Écran LCD I2C 16x2 :
+#### - VCC → 5V
+#### - GND → GND
+#### - SDA → A4
+#### - SCL → A5
+
+### 3. 🔴 LED Rouge :
+#### - Anode (patte longue) → Broche D8 via résistance 220 Ω
+#### - Cathode → GND
+
+### 4. 🔵 LED Bleue :
+#### - Anode → Broche D9 via résistance 220 Ω
+#### - Cathode → GND
+
+### 5. 🔊 Buzzer actif 5V :
+#### - + → Broche D10
+#### - - → GND
+
+### 6. 🌬️ Ventilateur 5V (commandé par transistor) :
+#### - + du ventilateur → 5V
+#### - - du ventilateur → Collecteur du transistor NPN (ex : 2N2222)
+#### - Émetteur du transistor → GND
+#### - Base du transistor → Broche D11 via résistance de 220 Ω
+#### - Une diode (1N4007) est connectée entre les bornes + et - du ventilateur (cathode vers +) pour protection contre le retour de courant
+
+### Ces branchements assurent un fonctionnement fiable et protégé de tous les composants. L’alimentation 5V peut être fournie par USB ou adaptateur secteur selon les besoins.
+
+
 
 ## 💡 Innovation et valeur ajoutée
 ### Ce système représente bien plus qu’un simple montage Arduino :
