@@ -1,24 +1,27 @@
 # système-de-surveillance-de-température
 ### Contexte :
-#### Dans des environnements sensibles tels que les salles informatiques, les boîtiers électroniques, les serres agricoles, ou encore les laboratoires, une surveillance thermique fiable est essentielle. Une hausse de température non détectée à temps peut endommager des équipements, affecter la sécurité ou compromettre des cultures.
-
-Ce projet a été développé dans le cadre de l’Unité d’Enseignement “Communication sans fil et spatial”, et a pour but de concevoir un système embarqué intelligent capable de :
-
-Mesurer la température et l’humidité ambiantes,
-
-Afficher ces informations en temps réel,
-
-Déclencher automatiquement une alerte en cas de dépassement de seuil critique,
-
-Activer un ventilateur de refroidissement pour réagir à la surchauffe.
-
-Le système est conçu pour être simple, autonome et adaptable, avec une interface claire et un boîtier imprimé en 3D, facilitant son intégration dans des environnements réels.
-
+#### Dans des environnements sensibles tels que les salles informatiques, les boîtiers électroniques, les serres agricoles, ou encore les laboratoires, une surveillance thermique fiable est essentielle. Une hausse de température non détectée à temps peut endommager des équipements, affecter la sécurité ou compromettre des cultures. Ce projet a été développé dans le cadre de l’Unité d’Enseignement “Communication sans fil et spatial”, et a pour but de concevoir un système embarqué intelligent capable de : Mesurer la température et l’humidité ambiantes, Afficher ces informations en temps réel, Déclencher automatiquement une alerte en cas de dépassement de seuil critique, Activer un ventilateur de refroidissement pour réagir à la surchauffe. Le système est conçu pour être simple, autonome et adaptable, avec une interface claire et un boîtier imprimé en 3D, facilitant son intégration dans des environnements réels.
 
 ### Description :
-#### Le projet repose sur une carte Arduino Uno qui collecte en temps réel les données de température et d’humidité grâce à un capteur DHT22. Ces informations sont affichées sur un écran LCD I2C 16x2, ce qui permet une lecture rapide par l’utilisateur.
+#### Le système repose sur une carte Arduino Uno, qui constitue le cœur du dispositif. Elle est reliée à plusieurs composants :
 
-Lorsque la température dépasse un seuil critique (38 °C), le système déclenche automatiquement une alerte par LED rouge, buzzer, et activation d’un ventilateur pour refroidir l’environnement. En fonctionnement normal, une LED bleue est allumée. L’ensemble est intégré dans un boîtier imprimé en 3D, compact et pratique.
+#### 📡 Capteur DHT22 : Capte à la fois la température et l’humidité ambiantes avec précision.
+
+#### 🖥️ Écran LCD 16x2 I2C : Affiche en temps réel les données captées, permettant une lecture directe par l’utilisateur.
+
+#### 🔴 LED rouge : Signalise une situation critique (température élevée).
+
+#### 🔵 LED bleue : Indique un état de fonctionnement normal (température stable).
+
+#### 🔊 Buzzer actif : Génère une alerte sonore en cas de surchauffe.
+
+#### 🌀 Ventilateur 5V : Se déclenche automatiquement pour refroidir l’environnement.
+
+#### ⚡ Transistor de puissance : Sert à commander le ventilateur sans surcharger la carte Arduino.
+
+#### 🧰 Boîtier imprimé en 3D : Conçu sur mesure pour intégrer tous les composants de façon sécurisée, propre et esthétique.
+
+#### ⚠️ Seuil critique fixé à 38 °C : au-delà de cette température, le système réagit automatiquement en activant l’alerte.
 
 ### Objectifs techniques :
 #### Lire et afficher température et humidité ambiantes.
