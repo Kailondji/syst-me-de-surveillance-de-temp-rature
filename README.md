@@ -1,6 +1,19 @@
 # système-de-surveillance-de-température
 ### Contexte :
-#### Dans un environnement où la régulation thermique est essentielle (salles informatiques, boîtiers électroniques, serres, etc.), il est important de détecter rapidement les hausses de température pour réagir efficacement. Ce projet s’inscrit dans le cadre de l’UE Communication sans fils et spatial et vise à concevoir un système embarqué capable de surveiller la température ambiante et de déclencher une alarme en cas de dépassement de seuil.
+#### Dans des environnements sensibles tels que les salles informatiques, les boîtiers électroniques, les serres agricoles, ou encore les laboratoires, une surveillance thermique fiable est essentielle. Une hausse de température non détectée à temps peut endommager des équipements, affecter la sécurité ou compromettre des cultures.
+
+Ce projet a été développé dans le cadre de l’Unité d’Enseignement “Communication sans fil et spatial”, et a pour but de concevoir un système embarqué intelligent capable de :
+
+Mesurer la température et l’humidité ambiantes,
+
+Afficher ces informations en temps réel,
+
+Déclencher automatiquement une alerte en cas de dépassement de seuil critique,
+
+Activer un ventilateur de refroidissement pour réagir à la surchauffe.
+
+Le système est conçu pour être simple, autonome et adaptable, avec une interface claire et un boîtier imprimé en 3D, facilitant son intégration dans des environnements réels.
+
 
 ### Description :
 #### Le projet repose sur une carte Arduino Uno qui collecte en temps réel les données de température et d’humidité grâce à un capteur DHT22. Ces informations sont affichées sur un écran LCD I2C 16x2, ce qui permet une lecture rapide par l’utilisateur.
